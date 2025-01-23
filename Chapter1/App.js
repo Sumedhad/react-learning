@@ -1,22 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Header from "../Chapter1/src/components/Header"; // Import Header component
+import Body from "../Chapter1/src/components/Body"; //Import Body component
 
-const heading = React.createElement(
-  "h1",
-  { id: "heading" },
-  "Hello World from React!"
-);
-
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "This is h1"),
-    React.createElement("h2", {}, "This is h2"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "This is h1"),
-    React.createElement("h2", {}, "This is h2"),
-  ]),
-]);
+const AppLayout = () => {
+  return (
+    <div id="app">
+      <Header />
+      <Body />
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+root.render(<AppLayout />);
