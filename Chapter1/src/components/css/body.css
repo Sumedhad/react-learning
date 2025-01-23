@@ -11,10 +11,45 @@
    
 }
 
-.search {
-    padding:10px;
+.shimmar-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmar-card {
+    width:200px;
+    height: 350px;
+    background-color: whitesmoke;
+    margin:10px;
+    padding:5px;
+   
 }
 
+.body {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.search {
+    display: flex;
+    flex-wrap: wrap;
+    
+    padding:10px;
+    height: 50px;
+}
+.searchcontainer{
+    display: block;
+    width: 100%;
+    justify-content: space-between;
+}
+.btnSearch{
+    margin: 5px;
+    height: 30px;
+    font-weight: bold;
+}
+.inputTxt{
+    height: 30px;
+    width: 180px;
+}
 .res-card:hover {
     
    

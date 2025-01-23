@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "../components/css/header.css"; // Make sure to create this CSS file
 import { LOGO_URL } from "/utils/constants.js";
 const Header = () => {
+  const [btnNameReact, setBtnNameReact] = useState("Login");
+
   return (
     <header className="header">
       <div className="logo">
@@ -14,6 +16,14 @@ const Header = () => {
           <li>About Us</li>
           <li>Contact Us</li>
           <li>Cart</li>
+          <button
+            className="Login"
+            onClick={() => {
+              setBtnNameReact("Logout");
+            }}
+          >
+            {btnNameReact}
+          </button>
         </ul>
       </div>
     </header>

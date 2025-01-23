@@ -48,3 +48,9 @@
     margin:10px;
     list-style-type: none;
   }
+
+  .Login {
+    height: 40px;
+    width: 250px;
+    cursor: pointer;
+  }
